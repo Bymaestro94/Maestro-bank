@@ -1,0 +1,38 @@
+@import 'src/styles/_variables.scss';
+@import 'src/styles/_mixins.scss';
+
+.button {
+	@include transition(background-color);
+	background-color: $gray;
+	color: $white;
+	border-radius: $radius;
+	padding: 12px 30px;
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: capitalize;
+
+	&:disabled {
+		cursor: not-allowed;
+		pointer-events: none;
+	}
+
+	&:hover {
+		background-color: lighten($gray, 3%);
+	}
+
+	&.green {
+		background-color: rgba($secondary, 50%);
+
+		&:hover {
+			background-color: rgba($secondary, 80%);
+		}
+	}
+
+	&.blue {
+		background-color: rgba($primary, 50%);
+
+		&:hover {
+			background-color: rgba($primary, 80%);
+		}
+	}
+}

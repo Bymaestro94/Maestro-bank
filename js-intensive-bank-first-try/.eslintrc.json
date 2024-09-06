@@ -1,0 +1,36 @@
+{
+	"env": {
+		"browser": true,
+		"node": true,
+		"es2021": true
+	},
+	"extends": "eslint:recommended",
+	"overrides": [],
+	"prarserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"rules": {
+		"no-console": 0,
+		"semi": "off",
+		"arrow-parens": "off",
+		"coma-dangle": "off",
+		"require-jsdoc": "off",
+		"no-tabs": 0,
+		"no-trailing-spaces": "off",
+		"indent": "off",
+		"no-debugger": "off",
+		"padded-blocks": "off",
+		"prefer-default-export": "off",
+		"no-prototype-builtins": "off",
+		"no-mixed-spaces-and-tabs": "off"
+	},
+	"settings": {
+		"import/resolver": {
+			"alias": {
+				"map": [["@", "./src"]]
+			},
+			"extensions": [".js"]
+		}
+	}
+}
