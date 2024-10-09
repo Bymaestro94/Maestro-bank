@@ -8,6 +8,7 @@ Thank you for considering contributing to **Maestro Bank**! Whether you're looki
 
 - Ensure you have the following installed:
   - **NodeJS**
+  - **Yarn** (package manager)
   - **Git**
 
 ### Cloning the Repository
@@ -15,5 +16,6 @@ Thank you for considering contributing to **Maestro Bank**! Whether you're looki
 First, clone the repository:
 
 ```bash
-git clone https://github.com/Bymaestro94/Maestro-bank.git
-cd Maestro-bank
+yarn
+yarn add
+yarn dev
